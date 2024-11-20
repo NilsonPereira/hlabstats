@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-11-20 22:43:41 by nil-->
+<display version="2.0.0">
+  <name>Main</name>
+  <width>500</width>
+  <height>700</height>
+  <background_color>
+    <color name="Text" red="0" green="0" blue="0">
+    </color>
+  </background_color>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>10</x>
+    <y>10</y>
+    <width>480</width>
+    <height>680</height>
+    <line_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Header_Background" red="77" green="77" blue="77">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar</name>
+    <pv_name>HLAB:cpu1</pv_name>
+    <x>120</x>
+    <y>30</y>
+    <width>260</width>
+    <height>30</height>
+    <fill_color>
+      <color red="102" green="128" blue="230">
+      </color>
+    </fill_color>
+    <background_color>
+      <color red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>CPU 1:</text>
+    <x>30</x>
+    <y>30</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>HLAB:cpu1</pv_name>
+    <x>390</x>
+    <y>30</y>
+    <width>90</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>CPU 2:</text>
+    <x>30</x>
+    <y>70</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar_1</name>
+    <pv_name>HLAB:cpu2</pv_name>
+    <x>120</x>
+    <y>70</y>
+    <width>260</width>
+    <height>30</height>
+    <fill_color>
+      <color red="102" green="128" blue="230">
+      </color>
+    </fill_color>
+    <background_color>
+      <color red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_1</name>
+    <pv_name>HLAB:cpu2</pv_name>
+    <x>390</x>
+    <y>70</y>
+    <width>90</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>HLAB:aux1</pv_name>
+    <x>200</x>
+    <y>230</y>
+    <width>110</width>
+    <height>30</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>aux 1:</text>
+    <x>30</x>
+    <y>180</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar_2</name>
+    <pv_name>HLAB:aux1</pv_name>
+    <x>120</x>
+    <y>180</y>
+    <width>260</width>
+    <height>30</height>
+    <fill_color>
+      <color red="102" green="128" blue="230">
+      </color>
+    </fill_color>
+    <background_color>
+      <color red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_2</name>
+    <pv_name>HLAB:aux1</pv_name>
+    <x>390</x>
+    <y>180</y>
+    <width>90</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>
