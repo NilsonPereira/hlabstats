@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-26 23:16:11 by nil-->
+<!--Saved on 2024-11-26 23:20:19 by nil-->
 <display version="2.0.0">
   <name>HLAB Stats</name>
   <width>500</width>
@@ -447,7 +447,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_7</name>
-    <pv_name>HLAB:netin</pv_name>
+    <pv_name>HLAB:users</pv_name>
     <x>120</x>
     <y>250</y>
     <height>30</height>
