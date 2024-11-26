@@ -41,7 +41,7 @@
       </color>
     </background_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <limits_from_pv>false</limits_from_pv>
+    <limits_from_pv>true</limits_from_pv>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
