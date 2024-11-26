@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-20 22:43:41 by nil-->
+<!--Saved on 2024-11-26 23:16:11 by nil-->
 <display version="2.0.0">
-  <name>Main</name>
+  <name>HLAB Stats</name>
   <width>500</width>
   <height>700</height>
   <background_color>
@@ -15,11 +15,11 @@
     <width>480</width>
     <height>680</height>
     <line_color>
-      <color name="Grid" red="128" green="128" blue="128">
+      <color red="128" green="128" blue="128">
       </color>
     </line_color>
     <background_color>
-      <color name="Header_Background" red="77" green="77" blue="77">
+      <color red="51" green="51" blue="51">
       </color>
     </background_color>
     <corner_width>5</corner_width>
@@ -41,7 +41,7 @@
       </color>
     </background_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
-    <limits_from_pv>true</limits_from_pv>
+    <limits_from_pv>false</limits_from_pv>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
@@ -54,6 +54,10 @@
       <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
       </font>
     </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
     <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
@@ -91,6 +95,10 @@
       <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
       </font>
     </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
     <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
@@ -139,7 +147,7 @@
     <name>Text Entry</name>
     <pv_name>HLAB:aux1</pv_name>
     <x>200</x>
-    <y>230</y>
+    <y>620</y>
     <width>110</width>
     <height>30</height>
     <precision>1</precision>
@@ -150,13 +158,17 @@
     <name>Label_2</name>
     <text>aux 1:</text>
     <x>30</x>
-    <y>180</y>
+    <y>570</y>
     <width>80</width>
     <height>30</height>
     <font>
       <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
       </font>
     </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
     <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
@@ -164,7 +176,7 @@
     <name>Progress Bar_2</name>
     <pv_name>HLAB:aux1</pv_name>
     <x>120</x>
-    <y>180</y>
+    <y>570</y>
     <width>260</width>
     <height>30</height>
     <fill_color>
@@ -182,7 +194,7 @@
     <name>Text Update_2</name>
     <pv_name>HLAB:aux1</pv_name>
     <x>390</x>
-    <y>180</y>
+    <y>570</y>
     <width>90</width>
     <height>30</height>
     <font>
@@ -191,6 +203,260 @@
     </font>
     <foreground_color>
       <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_3</name>
+    <text>Memory:</text>
+    <x>30</x>
+    <y>110</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar_3</name>
+    <pv_name>HLAB:memory</pv_name>
+    <x>120</x>
+    <y>110</y>
+    <width>260</width>
+    <height>30</height>
+    <fill_color>
+      <color red="102" green="128" blue="230">
+      </color>
+    </fill_color>
+    <background_color>
+      <color red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>HLAB:memory</pv_name>
+    <x>390</x>
+    <y>110</y>
+    <width>90</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_4</name>
+    <text>Disk:</text>
+    <x>30</x>
+    <y>150</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar_4</name>
+    <pv_name>HLAB:disk</pv_name>
+    <x>120</x>
+    <y>150</y>
+    <width>260</width>
+    <height>30</height>
+    <fill_color>
+      <color red="102" green="128" blue="230">
+      </color>
+    </fill_color>
+    <background_color>
+      <color red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>HLAB:disk</pv_name>
+    <x>390</x>
+    <y>150</y>
+    <width>90</width>
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="ActiveText" red="255" green="255" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_5</name>
+    <pv_name>HLAB:netin</pv_name>
+    <x>120</x>
+    <y>190</y>
+    <height>30</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_5</name>
+    <text>Net:</text>
+    <x>30</x>
+    <y>190</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_6</name>
+    <pv_name>HLAB:netout</pv_name>
+    <x>280</x>
+    <y>190</y>
+    <height>30</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Background" red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="51" green="51" blue="51">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>in</text>
+    <x>130</x>
+    <y>220</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>out</text>
+    <x>290</x>
+    <y>220</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Users:</text>
+    <x>30</x>
+    <y>250</y>
+    <width>80</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>HLAB:netin</pv_name>
+    <x>120</x>
+    <y>250</y>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Background" red="255" green="255" blue="255">
       </color>
     </foreground_color>
     <background_color>
