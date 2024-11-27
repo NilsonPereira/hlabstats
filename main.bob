@@ -109,8 +109,8 @@
     <y>70</y>
     <width>260</width>
     <height>30</height>
-    <min>1</min>
-    <max>99</max>
+    <minimum>1</minimum>
+    <maximum>99</maximum>
     <fill_color>
       <color red="102" green="128" blue="230">
       </color>
