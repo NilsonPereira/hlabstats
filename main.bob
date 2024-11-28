@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2024-11-28 19:09:33 by nil-->
+<!--Saved on 2024-11-28 21:04:33 by root-->
 <display version="2.0.0">
   <name>HLAB Stats</name>
   <width>500</width>
@@ -66,16 +66,16 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>HLAB:cpu1</pv_name>
-    <x>390</x>
+    <x>380</x>
     <y>30</y>
-    <width>90</width>
+    <width>70</width>
     <height>30</height>
     <font>
       <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
     <foreground_color>
-      <color name="ActiveText" red="255" green="255" blue="0">
+      <color name="Button_Background" red="210" green="210" blue="210">
       </color>
     </foreground_color>
     <background_color>
@@ -83,7 +83,7 @@
       </color>
     </background_color>
     <precision>1</precision>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="label" version="2.0.0">
@@ -127,16 +127,16 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_1</name>
     <pv_name>HLAB:cpu2</pv_name>
-    <x>390</x>
+    <x>380</x>
     <y>70</y>
-    <width>90</width>
+    <width>70</width>
     <height>30</height>
     <font>
       <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
     <foreground_color>
-      <color name="ActiveText" red="255" green="255" blue="0">
+      <color name="Button_Background" red="210" green="210" blue="210">
       </color>
     </foreground_color>
     <background_color>
@@ -144,7 +144,7 @@
       </color>
     </background_color>
     <precision>1</precision>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="textentry" version="3.0.0">
@@ -260,16 +260,16 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_3</name>
     <pv_name>HLAB:memory</pv_name>
-    <x>390</x>
+    <x>380</x>
     <y>110</y>
-    <width>90</width>
+    <width>70</width>
     <height>30</height>
     <font>
       <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
     <foreground_color>
-      <color name="ActiveText" red="255" green="255" blue="0">
+      <color name="Button_Background" red="210" green="210" blue="210">
       </color>
     </foreground_color>
     <background_color>
@@ -277,7 +277,7 @@
       </color>
     </background_color>
     <precision>1</precision>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="label" version="2.0.0">
@@ -321,16 +321,16 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_4</name>
     <pv_name>HLAB:disk</pv_name>
-    <x>390</x>
+    <x>380</x>
     <y>150</y>
-    <width>90</width>
+    <width>70</width>
     <height>30</height>
     <font>
       <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
     <foreground_color>
-      <color name="ActiveText" red="255" green="255" blue="0">
+      <color name="Button_Background" red="210" green="210" blue="210">
       </color>
     </foreground_color>
     <background_color>
@@ -338,7 +338,7 @@
       </color>
     </background_color>
     <precision>1</precision>
-    <horizontal_alignment>1</horizontal_alignment>
+    <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -475,6 +475,74 @@
     </background_color>
     <precision>1</precision>
     <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>%</text>
+    <x>460</x>
+    <y>30</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>%</text>
+    <x>460</x>
+    <y>70</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>%</text>
+    <x>460</x>
+    <y>110</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>%</text>
+    <x>460</x>
+    <y>150</y>
+    <width>20</width>
+    <height>30</height>
+    <font>
+      <font name="Header 3" family="Liberation Sans" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </foreground_color>
     <vertical_alignment>1</vertical_alignment>
   </widget>
 </display>
